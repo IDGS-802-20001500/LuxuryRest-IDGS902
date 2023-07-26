@@ -1,0 +1,17 @@
+.contenedorP{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#card-login{
+  border: 2px solid #6ea1ca;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.formularioLogin{
+  display: grid;
+  place-items: center;
+}

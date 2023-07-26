@@ -11,6 +11,8 @@ import { PedidoComponent } from './modulos/pedido/pedido/pedido.component';
 import { ProveedorComponent } from './modulos/proveedor/proveedor/proveedor.component';
 import { UsuarioComponent } from './modulos/usuario/usuario/usuario.component';
 import { VentaComponent } from './modulos/venta/venta/venta.component';
+import { MateriaPrimaComponent } from './modulos/materia_prima/materia-prima/materia-prima.component';
+import { RecetaComponent } from './modulos/receta/receta/receta.component';
 
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch:'full'},
@@ -25,8 +27,8 @@ const routes: Routes = [
   {path: 'proveedores', component: ProveedorComponent },
   {path: 'usuarios', component: UsuarioComponent },
   {path: 'ventas', component: VentaComponent },
-
-
+  {path: 'materiaPrima', component: MateriaPrimaComponent},
+  {path: 'receta', component: RecetaComponent},
 ];
 
 @NgModule({

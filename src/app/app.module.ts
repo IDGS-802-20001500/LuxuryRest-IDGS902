@@ -19,6 +19,8 @@ import { FinanzasComponent } from './modulos/finanzas/finanzas/finanzas.componen
 import { LoginComponent } from './modulos/login/login/login.component';
 import { RegistroComponent } from './modulos/login/registro/registro.component';
 import { ProductoComponent } from './modulos/producto/producto/producto.component';
+import { AgregarProductoComponent } from './modulos/producto/agregar-producto/agregar-producto.component';
+import { EditarProductoComponent } from './modulos/producto/editar-producto/editar-producto.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ProductoComponent } from './modulos/producto/producto/producto.componen
     FinanzasComponent,
     LoginComponent,
     RegistroComponent,
-    ProductoComponent
+    ProductoComponent,
+    AgregarProductoComponent,
+    EditarProductoComponent
   ],
   imports: [
     BrowserModule,

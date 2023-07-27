@@ -13,11 +13,15 @@ import { UsuarioComponent } from './modulos/usuario/usuario/usuario.component';
 import { VentaComponent } from './modulos/venta/venta/venta.component';
 import { MateriaPrimaComponent } from './modulos/materia_prima/materia-prima/materia-prima.component';
 import { RecetaComponent } from './modulos/receta/receta/receta.component';
+import { AgregarProductoComponent } from './modulos/producto/agregar-producto/agregar-producto.component';
+import { EditarProductoComponent } from './modulos/producto/editar-producto/editar-producto.component';
 
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch:'full'},
   {path: 'home', component: HomeComponent},
   {path: 'producto',component: ProductoComponent},
+  {path: 'producto/agregarProducto',component: AgregarProductoComponent},
+  {path: 'producto/editarProducto',component: EditarProductoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'login/registro', component: RegistroComponent},
   {path: 'compras', component: CompraComponent },

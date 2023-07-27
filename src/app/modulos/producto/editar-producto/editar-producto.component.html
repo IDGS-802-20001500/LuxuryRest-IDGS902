@@ -1,0 +1,72 @@
+<div class="contenedorProA">
+  <a class="btn btn-danger" style="border-radius: 16px;" routerLink="../"><i class="fa-solid fa-arrow-left"></i> Regresar</a>
+  <br>
+  <br>
+
+  <div class="contenedorAgrPro">
+
+    <h2 style="text-align: center;" >Editar producto</h2>
+
+    <hr>
+
+    <form class="row g-3">
+
+      <div class="col-4">
+        <label for="idPro" class="form-label">ID del producto: </label>
+        <input class="form-control" type="text" name="idPro" disabled>
+      </div>
+
+      <div class="col-4">
+        <label for="nombrePro" class="form-label">Nombre del producto: </label>
+        <input class="form-control" type="text" name="nombrePro">
+      </div>
+
+      <div class="col-4">
+        <label for="precio" class="form-label">Precio venta: </label>
+        <input class="form-control" type="number" name="precio" min="1" placeholder="$0">
+      </div>
+
+      <div class="col-12">
+        <label for="descP" class="form-label">Descripción: </label>
+        <textarea class="form-control" id="desc" name="descP" rows="3" style="border-radius: 16px;"></textarea>
+      </div>
+
+      <div class="col-8">
+        <label for="imagenP" class="form-label">Imagen: </label>
+        <input class="form-control" type="file" name="imagenP">
+      </div>
+
+      <div class="col-4">
+        <label class="form-label">Imagen ejemplo: </label>
+        <br>
+        <div style="border: 1px solid black; border-radius: 10px; height: 150px;">
+          <img alt="imagen" style="width: 64px; height: 64px;">
+        </div>
+      </div>
+
+      <div class="col-4">
+        <label for="cantidad" class="form-label">Cantidad: </label>
+        <input class="form-control" type="number" name="cantidad" min="1">
+      </div>
+
+      <div class="col-4">
+        <label class="form-label">Estatus: </label>
+        <select class="form-select" aria-label="Default select example" name="estatus" style="border-radius: 16px;">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <br>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit" style="border-radius: 16px;">Actualizar</button>
+      </div>
+
+    </form>
+
+
+  </div>
+
+
+</div>
+

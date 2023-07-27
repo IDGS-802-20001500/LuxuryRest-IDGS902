@@ -1,1 +1,46 @@
-<p>producto works!</p>
+<div class="contenedorPro">
+
+  <h1 style="text-align: center; font-size: 48px">Gestión de Productos</h1>
+  <br>
+  <a class="btn btn-warning" style="border-radius: 16px;" routerLink="agregarProducto"><i class="fa-regular fa-square-plus"></i> Agregar producto</a>
+  <br>
+  <br>
+  <div class="card">
+    <h3 class="card-header" style="background-color: #6ea1ca;">Productos</h3>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Imagen</th>
+            <th>Precio</th>
+            <th>Cantidad disp.</th>
+            <th>Valoración Total</th>
+            <th>Valoración C</th>
+            <th>Estatus</th>
+            <th colspan="2">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Cojin</td>
+            <td>Cojin super suave con polimero de litio</td>
+            <td><img alt="producto" title="producto"></td>
+            <td>$150</td>
+            <td>19</td>
+            <td>56</td>
+            <td>3.6</td>
+            <td>Disponible</td>
+            <td><a class="btn btn-warning" routerLink="editarProducto" style="border-radius: 16px;"><i class="fa-solid fa-pen"></i> Editar</a></td>
+            <td><a class="btn btn-danger" style="border-radius: 16px;"><i class="fa-solid fa-trash"></i> Eliminar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</div>

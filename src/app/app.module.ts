@@ -21,6 +21,7 @@ import { RegistroComponent } from './modulos/login/registro/registro.component';
 import { ProductoComponent } from './modulos/producto/producto/producto.component';
 import { AgregarProductoComponent } from './modulos/producto/agregar-producto/agregar-producto.component';
 import { EditarProductoComponent } from './modulos/producto/editar-producto/editar-producto.component';
+import { PagoComponent } from './modulos/venta/pago/pago.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { EditarProductoComponent } from './modulos/producto/editar-producto/edit
     RegistroComponent,
     ProductoComponent,
     AgregarProductoComponent,
-    EditarProductoComponent
+    EditarProductoComponent,
+    PagoComponent
   ],
   imports: [
     BrowserModule,

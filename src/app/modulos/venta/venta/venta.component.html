@@ -1,1 +1,48 @@
-<p>venta works!</p>
+<div class="contenedorPrincipal">
+
+  <div class="row g-3">
+
+    <div class="col-3" style="border-radius: 16px;" *ngFor="let i of [].constructor(productos); let index = index">
+      <div class="card">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/dua_lipa_portada_5_bf1628a4.jpeg?region=15,0,1956,1100&width=768" class="card-img-top" alt="producto">
+        <div class="card-body">
+          <h4 class="card-title" style="font-weight: 500;">Nombre del producto {{index + 1}}</h4>
+          <p class="card-text">Valoracion del producto</p>
+          <p class="card-text" style="color: green;">$1658</p>
+          <p class="card-text" style="color: rgb(95, 95, 95);">Cantidad disponible: <b>15</b></p>
+          <div class="row row-cols-1 g-3">
+            <button type="button" data-toggle="modal" data-target="#productoVer" class="btn col" style="border-radius: 16px; background-color: #6ea1ca;">Ver</button>
+            <a href="" class="btn btn-primary col" style="border-radius: 16px;">Agregar a carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Ventana modal -->
+
+  <div class="modal fade" id="productoVer" tabindex="-1" role="dialog" aria-labelledby="productoVerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"> <!-- Clase "modal-lg" para tamaño grande -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productoVerLabel">Ventana Modal de Bootstrap</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Aquí puedes agregar el contenido que desees para la ventana modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>

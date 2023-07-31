@@ -3,12 +3,19 @@
 
   <h1 class="text-center" style="font-size: 48px;">Gestión de Recetas</h1>
   <br>
-  <a class="btn btn-warning"><i class="fa-solid fa-plus"></i> Nueva receta</a>
+  <a class="btn btn-warning btnReceta" routerLink="agregarReceta"><i class="fa-solid fa-plus"></i> Nueva receta</a>
   <br>
   <br>
   <div class="card">
     <h3 class="card-header" style="background-color: blue; color: white;">Recetas</h3>
     <div class="card-body">
+      <div class="row">
+        <div class="col-md-3">
+          <b>Filtrar por: </b>
+          <input type="text" class="form-control" name="filtroRec">
+        </div>
+      </div>
+      <br>
       <table class="table">
         <thead>
           <tr>
@@ -25,7 +32,7 @@
             <td>Tela</td>
             <td>Cojin</td>
             <td>4m</td>
-            <td><button class="btn btn-warning"><i class="fa-solid fa-pen"></i> Editar</button></td>
+            <td><a class="btn btn-warning" routerLink="editarReceta"><i class="fa-solid fa-pen"></i> Editar</a></td>
             <td><button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Eliminar</button></td>
           </tr>
         </tbody>

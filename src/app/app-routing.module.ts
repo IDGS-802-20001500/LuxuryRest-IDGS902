@@ -15,6 +15,15 @@ import { MateriaPrimaComponent } from './modulos/materia_prima/materia-prima/mat
 import { RecetaComponent } from './modulos/receta/receta/receta.component';
 import { AgregarProductoComponent } from './modulos/producto/agregar-producto/agregar-producto.component';
 import { EditarProductoComponent } from './modulos/producto/editar-producto/editar-producto.component';
+import { AgregarProveedorComponent } from './modulos/proveedor/agregar-proveedor/agregar-proveedor.component';
+import { EditarProveedorComponent } from './modulos/proveedor/editar-proveedor/editar-proveedor.component';
+import { AgregarRecetaComponent } from './modulos/receta/agregar-receta/agregar-receta.component';
+import { EditarRecetaComponent } from './modulos/receta/editar-receta/editar-receta.component';
+import { AgregarMateriaComponent } from './modulos/materia_prima/agregar-materia/agregar-materia.component';
+import { EditarMateriaComponent } from './modulos/materia_prima/editar-materia/editar-materia.component';
+import { AgregarUsuarioComponent } from './modulos/usuario/agregar-usuario/agregar-usuario.component';
+import { EditarUsuarioComponent } from './modulos/usuario/editar-usuario/editar-usuario.component';
+import { EditarInventarioComponent } from './modulos/inventario/editar-inventario/editar-inventario.component';
 
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch:'full'},
@@ -27,12 +36,21 @@ const routes: Routes = [
   {path: 'compras', component: CompraComponent },
   {path: 'finanzas', component: FinanzasComponent },
   {path: 'inventario', component: InventarioComponent },
+  {path: 'inventario/editarInventario', component: EditarInventarioComponent },
   {path: 'pedidos', component: PedidoComponent },
   {path: 'proveedores', component: ProveedorComponent },
+  {path: 'proveedores/agregarProveedor', component: AgregarProveedorComponent },
+  {path: 'proveedores/editarProveedor', component: EditarProveedorComponent },
   {path: 'usuarios', component: UsuarioComponent },
+  {path: 'usuarios/agregarUsuario', component: AgregarUsuarioComponent },
+  {path: 'usuarios/editarUsuario', component: EditarUsuarioComponent },
   {path: 'ventas', component: VentaComponent },
   {path: 'materiaPrima', component: MateriaPrimaComponent},
+  {path: 'materiaPrima/agregarMateria', component: AgregarMateriaComponent},
+  {path: 'materiaPrima/editarMateria', component: EditarMateriaComponent},
   {path: 'receta', component: RecetaComponent},
+  {path: 'receta/agregarReceta', component: AgregarRecetaComponent},
+  {path: 'receta/editarReceta', component: EditarRecetaComponent},
 ];
 
 @NgModule({

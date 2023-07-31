@@ -1,0 +1,19 @@
+
+
+
+.contenedor-principal{
+  margin: 0.5rem;
+}
+
+
+
+.btnReceta{
+  border-radius: 16px;
+}
+
+.btnReceta:hover{
+  background-color: black;
+  border: 1px solid black;
+  color: rgb(255, 208, 0);
+  transition: all 0.60;
+}

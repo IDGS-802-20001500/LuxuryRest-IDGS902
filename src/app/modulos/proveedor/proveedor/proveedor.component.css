@@ -1,0 +1,19 @@
+.contenedorPrincipal{
+  margin: 0.5rem;
+}
+
+.titulo{
+  font-size: 4em;
+  text-align: center;
+}
+
+#botonAgregar{
+  border-radius: 16px;
+}
+
+#botonAgregar:hover{
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  transition: all 0.60;
+}

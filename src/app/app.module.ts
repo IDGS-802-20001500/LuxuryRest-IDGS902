@@ -22,6 +22,15 @@ import { ProductoComponent } from './modulos/producto/producto/producto.componen
 import { AgregarProductoComponent } from './modulos/producto/agregar-producto/agregar-producto.component';
 import { EditarProductoComponent } from './modulos/producto/editar-producto/editar-producto.component';
 import { PagoComponent } from './modulos/venta/pago/pago.component';
+import { AgregarProveedorComponent } from './modulos/proveedor/agregar-proveedor/agregar-proveedor.component';
+import { EditarProveedorComponent } from './modulos/proveedor/editar-proveedor/editar-proveedor.component';
+import { AgregarRecetaComponent } from './modulos/receta/agregar-receta/agregar-receta.component';
+import { EditarRecetaComponent } from './modulos/receta/editar-receta/editar-receta.component';
+import { AgregarMateriaComponent } from './modulos/materia_prima/agregar-materia/agregar-materia.component';
+import { EditarMateriaComponent } from './modulos/materia_prima/editar-materia/editar-materia.component';
+import { AgregarUsuarioComponent } from './modulos/usuario/agregar-usuario/agregar-usuario.component';
+import { EditarUsuarioComponent } from './modulos/usuario/editar-usuario/editar-usuario.component';
+import { EditarInventarioComponent } from './modulos/inventario/editar-inventario/editar-inventario.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +51,16 @@ import { PagoComponent } from './modulos/venta/pago/pago.component';
     ProductoComponent,
     AgregarProductoComponent,
     EditarProductoComponent,
-    PagoComponent
+    PagoComponent,
+    AgregarProveedorComponent,
+    EditarProveedorComponent,
+    AgregarRecetaComponent,
+    EditarRecetaComponent,
+    AgregarMateriaComponent,
+    EditarMateriaComponent,
+    AgregarUsuarioComponent,
+    EditarUsuarioComponent,
+    EditarInventarioComponent
   ],
   imports: [
     BrowserModule,

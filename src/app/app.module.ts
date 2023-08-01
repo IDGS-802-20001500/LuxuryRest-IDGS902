@@ -31,6 +31,7 @@ import { EditarMateriaComponent } from './modulos/materia_prima/editar-materia/e
 import { AgregarUsuarioComponent } from './modulos/usuario/agregar-usuario/agregar-usuario.component';
 import { EditarUsuarioComponent } from './modulos/usuario/editar-usuario/editar-usuario.component';
 import { EditarInventarioComponent } from './modulos/inventario/editar-inventario/editar-inventario.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { EditarInventarioComponent } from './modulos/inventario/editar-inventari
     EditarMateriaComponent,
     AgregarUsuarioComponent,
     EditarUsuarioComponent,
-    EditarInventarioComponent
+    EditarInventarioComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,

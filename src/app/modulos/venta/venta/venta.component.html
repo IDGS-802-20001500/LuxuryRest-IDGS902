@@ -1,5 +1,21 @@
 <div class="contenedorPrincipal">
 
+
+  <div class="row">
+    <div class="col-4">
+      <div class="input-group">
+        <span for="filtroPro" class="input-group-text">Filtro por: </span>
+        <input type="text" class="form-control" id="filtroPro" name="filtroPro" placeholder="Cojin">
+      </div>
+    </div>
+    <div class="col-4">
+      <a href="#" style="font-size: 2.5rem; color: #6ea1ca; align-items: center;"><i class="fa-solid fa-cart-shopping" title="carrito"></i></a>
+    </div>
+  </div>
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+  <br>
   <div class="row g-3">
 
     <div class="col-3" style="border-radius: 16px;" *ngFor="let i of [].constructor(productos); let index = index">

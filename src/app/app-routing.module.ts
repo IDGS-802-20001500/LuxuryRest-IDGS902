@@ -24,6 +24,7 @@ import { EditarMateriaComponent } from './modulos/materia_prima/editar-materia/e
 import { AgregarUsuarioComponent } from './modulos/usuario/agregar-usuario/agregar-usuario.component';
 import { EditarUsuarioComponent } from './modulos/usuario/editar-usuario/editar-usuario.component';
 import { EditarInventarioComponent } from './modulos/inventario/editar-inventario/editar-inventario.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch:'full'},
@@ -51,6 +52,7 @@ const routes: Routes = [
   {path: 'receta', component: RecetaComponent},
   {path: 'receta/agregarReceta', component: AgregarRecetaComponent},
   {path: 'receta/editarReceta', component: EditarRecetaComponent},
+  {path: '**', component: ErrorPageComponent},
 ];
 
 @NgModule({

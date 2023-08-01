@@ -1,1 +1,48 @@
-<p>agregar-usuario works!</p>
+<div class="contenedorPrincipal">
+
+
+  <a class="btn btn-danger" routerLink="../" style="border-radius: 16px;"><i class="fa-solid fa-arrow-right fa-rotate-180"></i> Regresar</a>
+  <h1 class="titulo">Agregar usuario</h1>
+
+  <br>
+  <br>
+
+  <div class="formularioUsuario">
+
+
+    <form action="" class="row g-3">
+
+     <div class="col-4">
+        <label for="name" class="form-label">Nombre: </label>
+        <input type="text" id="name" name="name" class="form-control">
+     </div>
+
+      <div class="col-8">
+        <label for="email" class="form-label">Email: </label>
+        <input type="email" id="email" name="email" class="form-control">
+      </div>
+
+      <div class="col-4">
+        <label for="password" class="form-label">Contraseña: </label>
+        <input type="password" id="password" name="password" class="form-control">
+      </div>
+
+      <div class="col-4">
+        <label for="rol" class="form-label">Rol: </label>
+        <select name="rol" id="rol" class="form-select">
+          <option value="1">Empleado</option>
+          <option value="2">Cliente</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-success" type="submit" id="btnAgregar"><i class="fa-solid fa-floppy-disk"></i> Agregar</button>
+      </div>
+
+
+    </form>
+
+  </div>
+
+</div>
+

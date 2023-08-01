@@ -25,6 +25,10 @@ import { AgregarUsuarioComponent } from './modulos/usuario/agregar-usuario/agreg
 import { EditarUsuarioComponent } from './modulos/usuario/editar-usuario/editar-usuario.component';
 import { EditarInventarioComponent } from './modulos/inventario/editar-inventario/editar-inventario.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { CompraMateriaComponent } from './modulos/compra/compra-materia/compra-materia.component';
+import { CrearProductoComponent } from './modulos/producto/crear-producto/crear-producto.component';
+import { PagoComponent } from './modulos/venta/pago/pago.component';
+import { CarritoComponent } from './modulos/venta/carrito/carrito.component';
 
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch:'full'},
@@ -32,9 +36,11 @@ const routes: Routes = [
   {path: 'producto',component: ProductoComponent},
   {path: 'producto/agregarProducto',component: AgregarProductoComponent},
   {path: 'producto/editarProducto',component: EditarProductoComponent},
+  {path: 'producto/crearProducto',component: CrearProductoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'login/registro', component: RegistroComponent},
   {path: 'compras', component: CompraComponent },
+  {path: 'compras/compraMateria', component: CompraMateriaComponent},
   {path: 'finanzas', component: FinanzasComponent },
   {path: 'inventario', component: InventarioComponent },
   {path: 'inventario/editarInventario', component: EditarInventarioComponent },
@@ -46,6 +52,8 @@ const routes: Routes = [
   {path: 'usuarios/agregarUsuario', component: AgregarUsuarioComponent },
   {path: 'usuarios/editarUsuario', component: EditarUsuarioComponent },
   {path: 'ventas', component: VentaComponent },
+  {path: 'ventas/pago', component: PagoComponent },
+  {path: 'ventas/carrito', component: CarritoComponent },
   {path: 'materiaPrima', component: MateriaPrimaComponent},
   {path: 'materiaPrima/agregarMateria', component: AgregarMateriaComponent},
   {path: 'materiaPrima/editarMateria', component: EditarMateriaComponent},

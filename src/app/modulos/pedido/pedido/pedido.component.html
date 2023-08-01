@@ -1,1 +1,93 @@
-<p>pedido works!</p>
+<div class="contenedorPrincipal">
+
+
+  <h1 class="titulo">Gestión de pedidos</h1>
+  <br>
+  <br>
+  <mat-tab-group>
+    <mat-tab label="Pendiente" class="tabP">
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID venta</th>
+            <th>Usuario</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+            <th colspan="2">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Usuario 1</td>
+            <td>Producto 1</td>
+            <td>1</td>
+            <td>01/01/2020</td>
+            <td><button mat-raised-button color="primary">Enviar</button></td>
+            <td><button mat-raised-button color="warn">Cancelar</button></td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </mat-tab>
+    <mat-tab label="Enviado" class="tabE">
+
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID venta</th>
+            <th>Usuario</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+            <th colspan="2">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Usuario 1</td>
+            <td>Producto 1</td>
+            <td>1</td>
+            <td>01/01/2020</td>
+            <td><button mat-raised-button color="primary">Enviar</button></td>
+            <td><button mat-raised-button color="warn">Cancelar</button></td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </mat-tab>
+    <mat-tab label="Cancelado" class="tabC">
+
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID venta</th>
+            <th>Usuario</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Usuario 1</td>
+            <td>Producto 1</td>
+            <td>1</td>
+            <td>01/01/2020</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </mat-tab>
+  </mat-tab-group>
+
+</div>

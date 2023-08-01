@@ -32,6 +32,9 @@ import { AgregarUsuarioComponent } from './modulos/usuario/agregar-usuario/agreg
 import { EditarUsuarioComponent } from './modulos/usuario/editar-usuario/editar-usuario.component';
 import { EditarInventarioComponent } from './modulos/inventario/editar-inventario/editar-inventario.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { CrearProductoComponent } from './modulos/producto/crear-producto/crear-producto.component';
+import { CarritoComponent } from './modulos/venta/carrito/carrito.component';
+import { CompraMateriaComponent } from './modulos/compra/compra-materia/compra-materia.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,10 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     AgregarUsuarioComponent,
     EditarUsuarioComponent,
     EditarInventarioComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    CrearProductoComponent,
+    CarritoComponent,
+    CompraMateriaComponent
   ],
   imports: [
     BrowserModule,

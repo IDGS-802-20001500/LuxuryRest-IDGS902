@@ -1,0 +1,21 @@
+.contenedorPrincipal{
+  margin: 10px;
+}
+
+.formularioInventario{
+  padding: 10px;
+  border: 2px solid #6ea1ca;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.titulo{
+  font-size: 4em;
+  text-align: center;
+}
+
+input{
+  border-radius: 16px;
+  border: 1px solid #6ea1ca;
+}

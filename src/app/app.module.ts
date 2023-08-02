@@ -35,6 +35,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { CrearProductoComponent } from './modulos/producto/crear-producto/crear-producto.component';
 import { CarritoComponent } from './modulos/venta/carrito/carrito.component';
 import { CompraMateriaComponent } from './modulos/compra/compra-materia/compra-materia.component';
+import { ValoracionProductoComponent } from './modulos/valoracion-producto/valoracion-producto.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { CompraMateriaComponent } from './modulos/compra/compra-materia/compra-m
     ErrorPageComponent,
     CrearProductoComponent,
     CarritoComponent,
-    CompraMateriaComponent
+    CompraMateriaComponent,
+    ValoracionProductoComponent
   ],
   imports: [
     BrowserModule,

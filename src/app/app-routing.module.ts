@@ -52,7 +52,7 @@ const routes: Routes = [
   {path: 'usuarios/agregarUsuario', component: AgregarUsuarioComponent },
   {path: 'usuarios/editarUsuario', component: EditarUsuarioComponent },
   {path: 'ventas', component: VentaComponent },
-  {path: 'ventas/pago', component: PagoComponent },
+  {path: 'ventas/carrito/pago', component: PagoComponent },
   {path: 'ventas/carrito', component: CarritoComponent },
   {path: 'materiaPrima', component: MateriaPrimaComponent},
   {path: 'materiaPrima/agregarMateria', component: AgregarMateriaComponent},

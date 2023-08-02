@@ -1,1 +1,45 @@
-<p>materia-prima works!</p>
+<div class="contenedorPrincipal">
+
+  <h1 class="titulo">Gestión de materias primas</h1>
+  <br><br>
+  <a class="btn btn-warning" id="btnAgregar" routerLink="agregarMateria"><i class="fa-solid fa-plus"></i> Agregar materia prima</a>
+  <br><br>
+
+  <div class="card">
+    <h3 class="card-header">Materia prima</h3>
+    <br>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Proveedor</th>
+            <th>Nombre</th>
+            <th>Unidad de medida</th>
+            <th>Cantidad minima</th>
+            <th>Precio compra</th>
+            <th colspan="2">Acciones</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>1</td>
+            <td>Proveedor 1</td>
+            <td>Nombre 1</td>
+            <td>Unidad 1</td>
+            <td>10</td>
+            <td>100</td>
+            <td>
+              <button class="btn btn-warning" routerLink="editarMateria"><i class="fa-solid fa-pencil"></i> Editar</button>
+            </td>
+            <td>
+              <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</div>

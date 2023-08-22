@@ -1,10 +1,9 @@
 export interface Pedidos {
   id_pedido:number;
   id_usuario:number;
-  estado_pedido:string;
-  fecha_hora_pedido:Date;
+  estado_pedido:number;
+  fecha_hora_pedido:string;
   domicilio:string;
-  empleado:string;
-  repartidor:string;
-  fecha_hora_entrega:Date;
+  empleado:number;
+  fecha_hora_entrega:string;
 }

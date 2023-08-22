@@ -5,4 +5,5 @@ export interface MateriaPrima {
   unidad_medida:string;
   cantidad_minima_requerida:number;
   precio_compra:number;
+  Activo:boolean;
 }

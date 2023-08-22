@@ -1,3 +1,12 @@
+<div *ngIf="usuario.length > 0">
+
+
+
+
+
+
+
+
 <div class="contenedorPrincipal">
 
 
@@ -14,34 +23,27 @@
 
       <div class="col-2">
         <label for="idUser" class="form-label">ID: </label>
-        <input type="text" id="idUser" name="idUser" class="form-control" disabled>
+        <input type="text" id="idUser" name="idUser" class="form-control" [(ngModel)]="id" disabled>
      </div>
 
      <div class="col-4">
         <label for="name" class="form-label">Nombre: </label>
-        <input type="text" id="name" name="name" class="form-control">
+        <input type="text" id="name" name="name" class="form-control" [(ngModel)]="name">
      </div>
 
       <div class="col-6">
         <label for="email" class="form-label">Email: </label>
-        <input type="email" id="email" name="email" class="form-control">
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email">
       </div>
 
       <div class="col-4">
         <label for="password" class="form-label">Contraseña: </label>
-        <input type="password" id="password" name="password" class="form-control">
+        <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password">
       </div>
 
-      <div class="col-4">
-        <label for="rol" class="form-label">Rol: </label>
-        <select name="rol" id="rol" class="form-select">
-          <option value="1">Empleado</option>
-          <option value="2">Cliente</option>
-        </select>
-      </div>
 
       <div class="col-12">
-        <button class="btn btn-success" type="submit" id="btnAgregar"><i class="fa-solid fa-pen-to-square"></i> Actualizar</button>
+        <button class="btn btn-success" type="submit" id="btnAgregar"  (click)="editar()"><i class="fa-solid fa-pen-to-square"></i> Actualizar</button>
       </div>
 
 
@@ -52,3 +54,14 @@
 </div>
 
 
+
+</div>
+<div *ngIf="usuario == ''">
+  <h1>Al parecer no tienes acceso a esta página, regresemos.</h1>
+  <br>
+  <label for="">Inicia sesion</label>
+  <br>
+  <br>
+
+  <button routerLink="../../../login" class="btn btn-primary">vamos</button>
+</div>

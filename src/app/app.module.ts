@@ -36,6 +36,17 @@ import { CrearProductoComponent } from './modulos/producto/crear-producto/crear-
 import { CarritoComponent } from './modulos/venta/carrito/carrito.component';
 import { CompraMateriaComponent } from './modulos/compra/compra-materia/compra-materia.component';
 import { ValoracionProductoComponent } from './modulos/valoracion-producto/valoracion-producto.component';
+import { MermasComponent } from './modulos/mermas/mermas.component';
+import { EditarMermasComponent } from './modulos/mermas/editar-mermas/editar-mermas.component';
+import { RegistrarMermasComponent } from './modulos/mermas/registrar-mermas/registrar-mermas.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ConexionServiceService } from './conexion-service.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DialogMensajeComponent } from './dialog-mensaje/dialog-mensaje.component';
+import { DialogContentComponent } from './dialog-content/dialog-content.component';
+import { CustomAlertComponent } from './custom-alert/custom-alert.component';
+import { HistorialVentasComponent } from './modulos/venta/historial-ventas/historial-ventas.component'; 
+
 
 @NgModule({
   declarations: [
@@ -70,15 +81,25 @@ import { ValoracionProductoComponent } from './modulos/valoracion-producto/valor
     CrearProductoComponent,
     CarritoComponent,
     CompraMateriaComponent,
-    ValoracionProductoComponent
+    ValoracionProductoComponent,
+    MermasComponent,
+    EditarMermasComponent,
+    RegistrarMermasComponent,
+    DialogMensajeComponent,
+    DialogContentComponent,
+    CustomAlertComponent,
+    HistorialVentasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ConexionServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

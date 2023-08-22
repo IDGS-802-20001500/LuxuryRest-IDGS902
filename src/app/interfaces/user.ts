@@ -4,5 +4,5 @@ export interface User {
   email:string;
   password:string;
   active:boolean;
-  confirmed_at:Date;
+  confirmed_at:string;
 }

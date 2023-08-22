@@ -5,4 +5,5 @@ export interface Proveedor {
   correo_electronico:string;
   telefono:string;
   direccion:string;
+  Activo:boolean;
 }

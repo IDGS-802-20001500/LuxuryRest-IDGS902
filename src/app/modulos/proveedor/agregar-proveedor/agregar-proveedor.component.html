@@ -1,8 +1,19 @@
+<div *ngIf="usuario.length > 0">
+
+
+
+
+
+
+
+
+
+
 <div class="contenedorPrincipal">
 
 
-  <a class="btn btn-danger" routerLink="../" style="border-radius: 16px;"><i class="fa-solid fa-arrow-right fa-rotate-180"></i> Regresar</a>
-  <h1 class="titulo">Agregar Proveedor</h1>
+  <a class="btn btn-secondary" routerLink="../" style="border-radius: 16px;"><i class="fa-solid fa-arrow-right fa-rotate-180"></i> Regresar</a>
+  <h1 class="titulo" style="text-align: center; font-size: 48px; font-weight: bold; font-family: LuxuriousScript-Regular; font-style: italic;">Agregar Proveedor</h1>
 
   <br>
   <br>
@@ -14,31 +25,31 @@
 
      <div class="col-5">
         <label for="Nombre_Empresa" class="form-label">Nombre Empresa:</label>
-        <input type="text" id="Nombre_Empresa" name="Nombre_Empresa" class="form-control" style="border-radius: 16px;">
+        <input [(ngModel)]="nombre_empresa" type="text" id="Nombre_Empresa" name="Nombre_Empresa" class="form-control" style="border-radius: 16px;">
      </div>
 
       <div class="col-5">
         <label for="Nombre_contacto" class="form-label">Nombre contacto:</label>
-        <input type="text" id="Nombre_contacto" name="Nombre_contacto" class="form-control" style="border-radius: 16px;">
+        <input [(ngModel)]="nombre_contacto" type="text" id="Nombre_contacto" name="Nombre_contacto" class="form-control" style="border-radius: 16px;">
       </div>
 
       <div class="col-6">
-        <label for="correo_electronico" class="form-label">Correo electronico:</label>
-        <input type="email" id="correo_electronico" name="correo_electronico" class="form-control" style="border-radius: 16px;">
+        <label  for="correo_electronico" class="form-label">Correo electronico:</label>
+        <input [(ngModel)]="correo_electronico" type="email" id="correo_electronico" name="correo_electronico" class="form-control" style="border-radius: 16px;">
       </div>
 
       <div class="col-4">
         <label for="telefono" class="form-label">Teléfono:</label>
-        <input type="text" id="telefono" name="telefono" class="form-control" style="border-radius: 16px;">
+        <input [(ngModel)]="telefono" type="text" id="telefono" name="telefono" class="form-control" style="border-radius: 16px;">
       </div>
 
       <div class="col-6">
         <label for="direccion" class="form-label">Dirección:</label>
-        <input type="text" id="direccion" name="direccion" class="form-control" style="border-radius: 16px;">
+        <input [(ngModel)]="direccion" type="text" id="direccion" name="direccion" class="form-control" style="border-radius: 16px;">
       </div>
 
       <div class="col-12">
-        <button class="btn btn-success" type="submit" id="botonGuardar"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+        <button class="btn btn-success" type="submit" (click)="guardarProveedor()" id="botonGuardar"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
       </div>
 
 
@@ -49,4 +60,14 @@
 
 
 
+</div>
+</div>
+<div *ngIf="usuario == ''">
+  <h1>Al parecer no tienes acceso a esta página, regresemos.</h1>
+  <br>
+  <label for="">Inicia sesion</label>
+  <br>
+  <br>
+
+  <button routerLink="../../login" class="btn btn-primary">vamos</button>
 </div>

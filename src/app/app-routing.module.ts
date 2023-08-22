@@ -29,38 +29,46 @@ import { CompraMateriaComponent } from './modulos/compra/compra-materia/compra-m
 import { CrearProductoComponent } from './modulos/producto/crear-producto/crear-producto.component';
 import { PagoComponent } from './modulos/venta/pago/pago.component';
 import { CarritoComponent } from './modulos/venta/carrito/carrito.component';
-
+import { MermasComponent } from './modulos/mermas/mermas.component';
+import { RegistrarMermasComponent } from './modulos/mermas/registrar-mermas/registrar-mermas.component';
+import { EditarMermasComponent } from './modulos/mermas/editar-mermas/editar-mermas.component';
+import { HistorialVentasComponent } from './modulos/venta/historial-ventas/historial-ventas.component';
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch:'full'},
   {path: 'home', component: HomeComponent},
   {path: 'producto',component: ProductoComponent},
   {path: 'producto/agregarProducto',component: AgregarProductoComponent},
-  {path: 'producto/editarProducto',component: EditarProductoComponent},
+  {path: 'producto/editarProducto/:id_producto',component: EditarProductoComponent},
   {path: 'producto/crearProducto',component: CrearProductoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'login/registro', component: RegistroComponent},
   {path: 'compras', component: CompraComponent },
+  {path: 'historialVentas', component: HistorialVentasComponent },
   {path: 'compras/compraMateria', component: CompraMateriaComponent},
   {path: 'finanzas', component: FinanzasComponent },
   {path: 'inventario', component: InventarioComponent },
-  {path: 'inventario/editarInventario', component: EditarInventarioComponent },
+  {path: 'inventario/editarInventario/:id_inventario', component: EditarInventarioComponent },
   {path: 'pedidos', component: PedidoComponent },
   {path: 'proveedores', component: ProveedorComponent },
   {path: 'proveedores/agregarProveedor', component: AgregarProveedorComponent },
-  {path: 'proveedores/editarProveedor', component: EditarProveedorComponent },
+  {path: 'proveedores/editarProveedor/:id_proveedor', component: EditarProveedorComponent },
   {path: 'usuarios', component: UsuarioComponent },
   {path: 'usuarios/agregarUsuario', component: AgregarUsuarioComponent },
-  {path: 'usuarios/editarUsuario', component: EditarUsuarioComponent },
+  {path: 'usuarios/editarUsuario/:id/:name/:email/:password', component: EditarUsuarioComponent },
   {path: 'ventas', component: VentaComponent },
   {path: 'ventas/carrito/pago', component: PagoComponent },
   {path: 'ventas/carrito', component: CarritoComponent },
   {path: 'materiaPrima', component: MateriaPrimaComponent},
   {path: 'materiaPrima/agregarMateria', component: AgregarMateriaComponent},
-  {path: 'materiaPrima/editarMateria', component: EditarMateriaComponent},
+  {path: 'materiaPrima/editarMateria/:id_materia', component: EditarMateriaComponent},
   {path: 'receta', component: RecetaComponent},
   {path: 'receta/agregarReceta', component: AgregarRecetaComponent},
-  {path: 'receta/editarReceta', component: EditarRecetaComponent},
+  {path: 'receta/editarReceta/:id_receta', component: EditarRecetaComponent},
+  {path: 'mermas', component: MermasComponent},
+  {path:'mermas/registrar-mermas',component:RegistrarMermasComponent},
+  {path:'mermas/editar-mermas/:id_merma',component:EditarMermasComponent},
   {path: '**', component: ErrorPageComponent},
+
 ];
 
 @NgModule({

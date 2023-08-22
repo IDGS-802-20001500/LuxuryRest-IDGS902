@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./finanzas.component.css']
 })
 export class FinanzasComponent {
-
+  usuario = "" + localStorage.getItem('usuario');
 }
